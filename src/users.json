@@ -1,0 +1,45 @@
+{
+    "status":"success",
+    "data":[
+        {
+            "id":1,
+            "username":"Andrew",
+            "age": 25,
+            "company":"Monflex Studio",
+            "position":"Fullstack JS Developer",
+            "skills":["React","Redux","JS"]
+        },
+        {
+            "id":2,
+            "username":"Kate",
+            "age": 18,
+            "company":"Test Studio",
+            "position":"Front JS Developer",
+            "skills":["React","Redux","HTML","CSS","PYTHON"]
+        },
+        {
+            "id":3,
+            "username":"Oleg",
+            "age": 16,
+            "company":"FrontRow Studio",
+            "position":"Python Developer",
+            "skills":["PYTHON","PHP"]
+        },
+        {
+            "id":4,
+            "username":"Milana",
+            "age": 22,
+            "company":"FrontRow Studio",
+            "position":"HR",
+            "skills":["Ukraine","Russian","English"]
+        },
+        {
+            "id":5,
+            "username":"Ivan",
+            "age": 55,
+            "company":"Google",
+            "position":"Storoj",
+            "skills":["Dvorovoi"]
+        }
+    ]
+}

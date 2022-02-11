@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Table from "./Table";
+import { Container, Header } from "semantic-ui-react";
+import {Component} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends Component{
+  constructor(props) {
+    super(props);
+    this.state={}
+  }
+  render(){
+
+    return(
+      <Container style={{ margin: 20 }}>
+        <Header as="h3">The List of the Users</Header>
+
+     <Table />
+      </Container>
+    );
+  }}
+
 
 export default App;
