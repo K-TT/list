@@ -1,5 +1,5 @@
 import './App.css';
-import { Container, Header, Input, Tab} from "semantic-ui-react";
+import {Container, Header, Image, Input, Tab} from "semantic-ui-react";
 import React, {Component} from "react";
 import Users from './users.json'
 
@@ -23,11 +23,16 @@ class App extends Component{
     }).map(
       (user)=>({
         menuItem: user.username,
-        render: () => <Tab.Pane><div>
-          <h1>{user.username}. {user.position}</h1>
-          <h2>{user.company}</h2>
+        render: () => <Tab.Pane>
+          <div>
+            <Header as='h2' color='violet'>
+              <Image circular src='https://react.semantic-ui.com/images/avatar/small/jenny.jpg' /> {user.username}
+            </Header>
+            <h5>{user.age}</h5>
+          <h2>{user.position} at {user.company}</h2>
           <p>{user.skills.join(", ")}</p>
-        </div></Tab.Pane>
+        </div>
+        </Tab.Pane>
       })
     );
 
